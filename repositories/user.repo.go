@@ -3,7 +3,7 @@ package repositories
 import (
 	"time"
 
-	"github.com/MarcelArt/ModelCraft/models"
+	"github.com/MarcelArt/api-portfolio-marcel/models"
 	"gorm.io/gorm"
 )
 

@@ -3,9 +3,9 @@ package middlewares
 import (
 	"strings"
 
-	"github.com/MarcelArt/ModelCraft/models"
-	"github.com/MarcelArt/ModelCraft/repositories"
-	"github.com/MarcelArt/ModelCraft/utils"
+	"github.com/MarcelArt/api-portfolio-marcel/models"
+	"github.com/MarcelArt/api-portfolio-marcel/repositories"
+	"github.com/MarcelArt/api-portfolio-marcel/utils"
 	"github.com/gofiber/fiber/v2"
 )
 

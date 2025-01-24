@@ -1,9 +1,9 @@
 package view_routes
 
 import (
-	"github.com/MarcelArt/ModelCraft/database"
-	view_handlers "github.com/MarcelArt/ModelCraft/handlers/view"
-	"github.com/MarcelArt/ModelCraft/repositories"
+	"github.com/MarcelArt/api-portfolio-marcel/database"
+	view_handlers "github.com/MarcelArt/api-portfolio-marcel/handlers/view"
+	"github.com/MarcelArt/api-portfolio-marcel/repositories"
 	"github.com/gofiber/fiber/v2"
 )
 

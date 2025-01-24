@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/MarcelArt/ModelCraft/models"
-	"github.com/MarcelArt/ModelCraft/repositories"
-	"github.com/MarcelArt/ModelCraft/tests/helpers"
+	"github.com/MarcelArt/api-portfolio-marcel/models"
+	"github.com/MarcelArt/api-portfolio-marcel/repositories"
+	"github.com/MarcelArt/api-portfolio-marcel/tests/helpers"
 	"github.com/stretchr/testify/assert"
 	"gorm.io/gorm"
 )

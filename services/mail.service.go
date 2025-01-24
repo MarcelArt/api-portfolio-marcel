@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/MarcelArt/ModelCraft/config"
+	"github.com/MarcelArt/api-portfolio-marcel/config"
 	"gopkg.in/gomail.v2"
 )
 

@@ -4,13 +4,13 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/MarcelArt/ModelCraft/database"
-	"github.com/MarcelArt/ModelCraft/models"
-	"github.com/MarcelArt/ModelCraft/repositories"
-	"github.com/MarcelArt/ModelCraft/scaffold"
-	"github.com/MarcelArt/ModelCraft/utils"
-	"github.com/MarcelArt/ModelCraft/views/components"
-	"github.com/MarcelArt/ModelCraft/views/dev_tools"
+	"github.com/MarcelArt/api-portfolio-marcel/database"
+	"github.com/MarcelArt/api-portfolio-marcel/models"
+	"github.com/MarcelArt/api-portfolio-marcel/repositories"
+	"github.com/MarcelArt/api-portfolio-marcel/scaffold"
+	"github.com/MarcelArt/api-portfolio-marcel/utils"
+	"github.com/MarcelArt/api-portfolio-marcel/views/components"
+	"github.com/MarcelArt/api-portfolio-marcel/views/dev_tools"
 	"github.com/gofiber/fiber/v2"
 )
 

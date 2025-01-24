@@ -1,4 +1,4 @@
-module github.com/MarcelArt/ModelCraft
+module github.com/MarcelArt/api-portfolio-marcel
 
 go 1.23
 
