@@ -4,10 +4,7 @@ import (
 	"time"
 
 	"github.com/MarcelArt/api-portfolio-marcel/config"
-	"github.com/MarcelArt/api-portfolio-marcel/database"
 	view_handlers "github.com/MarcelArt/api-portfolio-marcel/handlers/view"
-	"github.com/MarcelArt/api-portfolio-marcel/middlewares"
-	"github.com/MarcelArt/api-portfolio-marcel/repositories"
 	api_routes "github.com/MarcelArt/api-portfolio-marcel/routes/api"
 	view_routes "github.com/MarcelArt/api-portfolio-marcel/routes/view"
 	"github.com/gofiber/fiber/v2"
@@ -42,9 +39,10 @@ func SetupRoutes(app *fiber.App) {
 
 	app.Get("/metrics", monitor.New())
 
-	authMiddleware := middlewares.NewAuthMiddleware(repositories.NewUserRepo(database.GetDB()))
+	// authMiddleware := middlewares.NewAuthMiddleware(repositories.NewUserRepo(database.GetDB()))
 
 	api := app.Group("/api")
-	api_routes.SetupUserRoutes(api, authMiddleware)
-	api_routes.SetupAuthorizedDeviceRoutes(api, authMiddleware)
+	api_routes.SetupPortfolioRoutes(api)
+	// api_routes.SetupUserRoutes(api, authMiddleware)
+	// api_routes.SetupAuthorizedDeviceRoutes(api, authMiddleware)
 }
