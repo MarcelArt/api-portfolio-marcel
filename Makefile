@@ -25,3 +25,6 @@ test:
 
 mock:
 	@mockery
+
+encode-env:
+	@base64 prod.env > encoded-prod.env
