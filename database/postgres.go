@@ -2,6 +2,7 @@ package database
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 
 	"github.com/MarcelArt/api-portfolio-marcel/config"
@@ -27,7 +28,8 @@ func ConnectDB() {
 	})
 
 	if err != nil {
-		panic("failed to connect database")
+		log.Println("failed to connect database")
+		return
 	}
 
 	fmt.Println("Connection Opened to Database")
