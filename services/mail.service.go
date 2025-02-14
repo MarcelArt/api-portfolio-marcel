@@ -19,6 +19,8 @@ type Mailer struct {
 	Subject     string
 	Body        string
 	Attachments []string
+	CC          string
+	CCName      string
 }
 
 func NewMailService() *MailService {
@@ -38,6 +40,7 @@ func (s *MailService) SendMail(m Mailer) error {
 	message := gomail.NewMessage()
 	message.SetHeader("From", config.Env.SMTPName)
 	message.SetHeader("To", m.To...)
+	message.SetAddressHeader("Cc", m.CC, m.CCName)
 	message.SetHeader("Subject", m.Subject)
 	message.SetBody("text/html", m.Body)
 

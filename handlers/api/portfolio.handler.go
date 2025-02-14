@@ -50,6 +50,8 @@ func (h *PortfolioHandler) SendMessage(c *fiber.Ctx) error {
 		To:      []string{config.Env.SMTPEmail},
 		Subject: message.Subject,
 		Body:    body,
+		CC:      message.Email,
+		CCName:  message.Name,
 	})
 	if err != nil {
 		return c.Status(utils.StatusCodeByError(err)).JSON(models.NewJSONResponse(err, ""))
