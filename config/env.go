@@ -29,7 +29,7 @@ var Env *env
 func SetupENV() {
 	err := godotenv.Load(".env")
 	if err != nil {
-		log.Panic(err.Error())
+		log.Println(err.Error())
 	}
 
 	smtpPort, err := strconv.Atoi(os.Getenv("SMTP_PORT"))

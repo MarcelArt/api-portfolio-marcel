@@ -1,0 +1,18 @@
+networks:
+  infra-app:
+    external: true
+
+services:
+  api-portfolio:
+    image: registry.marceltechspace.com/api-portfolio:latest
+    container_name: api-portfolio
+    ports:
+      - '8080:8080'
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    env_file:
+      - .env
+    restart: always
+    networks:
+      - infra-app
